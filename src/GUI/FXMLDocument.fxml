@@ -15,6 +15,6 @@
         <Button fx:id="button_stop" layoutX="250" layoutY="60" onAction="#stop" prefHeight="40.0" prefWidth="70.0" text="Reset" />
         <Button fx:id="buttonClose" layoutX="330" layoutY="60" maxWidth="110" onAction="#clickClose" prefHeight="40.0" prefWidth="70.0" text="Close" />
 
-        <CheckBox layoutX="150" layoutY="120.0" onAction="#filterBox" text="ФНЧ КИХ" textFill="#fefefe" />
+        <CheckBox layoutX="150" layoutY="120.0" onAction="#filterBox" text="ФНЧ БИХ" textFill="#fefefe" />
     </children>
 </AnchorPane>
