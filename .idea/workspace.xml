@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e7d6718-0c30-4e9f-ab37-d6ca11a7b130" name="Changes" comment="app1_read">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2e7d6718-0c30-4e9f-ab37-d6ca11a7b130" name="Changes" comment="app3_fnch_bih">
+      <change beforePath="$PROJECT_DIR$/src/GUI/FXMLDocument.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/FXMLDocument.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/FXMLDocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/FXMLDocumentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/AudioPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/AudioPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/equalizer/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equalizer/Filter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/equalizer/FilterInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equalizer/FilterInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,28 @@
       <option name="project" value="LOCAL" />
       <updated>1687171439322</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="app2_buffer">
+      <created>1687171922598</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687171922598</updated>
+    </task>
+    <task id="LOCAL-00003" summary="app3_fnch_kih">
+      <created>1687172079979</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687172079979</updated>
+    </task>
+    <task id="LOCAL-00004" summary="app3_fnch_bih">
+      <created>1687172169587</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687172169587</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -75,6 +97,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="app1_read" />
-    <option name="LAST_COMMIT_MESSAGE" value="app1_read" />
+    <MESSAGE value="app2_buffer" />
+    <MESSAGE value="app3_fnch_kih" />
+    <MESSAGE value="app3_fnch_bih" />
+    <option name="LAST_COMMIT_MESSAGE" value="app3_fnch_bih" />
   </component>
 </project>
