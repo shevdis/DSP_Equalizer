@@ -89,6 +89,22 @@ public class FXMLDocumentController implements Initializable {
         System.exit(0);
     }
 
+    @FXML
+    private void chorusBox() {
+        System.out.println("CHORUS");
+        if (!this.audioPlayer.ChorusIsActive())
+            this.audioPlayer.setChorus(true);
+        else this.audioPlayer.setChorus(false);
+    }
+
+    @FXML
+    private void clippingBox() {
+        System.out.println("CLIPPING");
+        if (!this.audioPlayer.clippingIsActive())
+            this.audioPlayer.setClipping(true);
+        else this.audioPlayer.setClipping(false);
+    }
+
     private void resetSliders() {
         Slider0.setValue(1);
         Slider1.setValue(1);

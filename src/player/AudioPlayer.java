@@ -1,6 +1,9 @@
 package player;
 
+import effects.Сlipping;
+import effects.Chorus;
 import equalizer.Equalizer;
+
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
@@ -11,18 +14,26 @@ public class AudioPlayer {
     private final File currentMusicFile;
     private AudioInputStream audioStream;
     private SourceDataLine sourceDataLine;
-    public static final int BUFF_SIZE = 32000;
+    public static final int BUFF_SIZE = 40000;
     private final byte[] bufferBytes = new byte[BUFF_SIZE];
     private short[] bufferShort = new short[BUFF_SIZE / 2];
     private boolean pauseStatus;
     private boolean stopStatus;
     private double gain;
     private final Equalizer equalizer;
+    private final Chorus chorus;
+    private boolean isChorus;
+    private final Сlipping сlipping;
+    private boolean isClipping;
 
     public AudioPlayer(File musicFile) {
         this.currentMusicFile = musicFile;
         this.equalizer = new Equalizer();
         this.gain = 1.0;
+        this.isClipping = false;
+        this.сlipping = new Сlipping();
+        this.isChorus = false;
+        this.chorus = new Chorus();
     }
 
 
@@ -42,6 +53,14 @@ public class AudioPlayer {
                 if (this.pauseStatus) this.pause();
 
                 if (this.stopStatus) break;
+
+                if (this.isClipping) {
+                    this.clipping(this.bufferShort);
+                }
+
+                if (this.isChorus) {
+                    this.chorus(this.bufferShort);
+                }
 
                 equalizer.setInputSignal(this.bufferShort);
                 this.equalizer.equalization();
@@ -110,5 +129,32 @@ public class AudioPlayer {
     public Equalizer getEqualizer() {
         return this.equalizer;
     }
+
+    private void clipping(short[] inputSamples) {
+        this.сlipping.setInputSampleStream(inputSamples);
+        this.сlipping.createEffect();
+    }
+
+    public boolean clippingIsActive() {
+        return this.isClipping;
+    }
+
+    public void setClipping(boolean b) {
+        this.isClipping = b;
+    }
+
+    private void chorus(short[] inputSamples) throws ExecutionException, InterruptedException {
+        chorus.setInputSampleStream(inputSamples);
+        chorus.createEffect();
+    }
+
+    public boolean ChorusIsActive() {
+        return this.isChorus;
+    }
+
+    public void setChorus(boolean b) {
+        this.isChorus = b;
+    }
+
 
 }

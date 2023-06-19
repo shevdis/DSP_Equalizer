@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400" prefWidth="1200" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="500" prefWidth="1200" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXMLDocumentController">
     <children>
 
         <Label layoutX="5.0" layoutY="145.0" text="Эквалайзер " textFill="#fefefe" />
@@ -50,7 +50,7 @@
             </children>
 
         </HBox>
-        <Label layoutX="528.0" layoutY="6.0" text="Панель управления" />
+        <Label layoutX="523.0" layoutY="6.0" text="Панель управления" />
         <Button fx:id="button_select" layoutX="401.0" layoutY="41.0" onAction="#open" prefHeight="40.0" prefWidth="70.0" text="Open" />
         <Button fx:id="button_play" layoutX="481.0" layoutY="41.0" onAction="#play" prefHeight="40.0" prefWidth="70.0" text="Play" />
         <Button fx:id="button_pause" layoutX="561.0" layoutY="41.0" onAction="#pause" prefHeight="40.0" prefWidth="70.0" text="Pause" />
@@ -60,6 +60,11 @@
         <Label layoutX="528.0" layoutY="93.0" text="Общая громкость" textFill="#fefefe" />
         <Slider fx:id="soundSlider" layoutX="518.0" layoutY="120.0" max="1.5" prefHeight="25.0" prefWidth="155.0" value="0.5">
         </Slider>
+
+        <Label layoutX="530.0" layoutY="375.0" text="Панель эффектов" textFill="#fefefe" />
+        <CheckBox layoutX="530.0" layoutY="405.0" onAction="#chorusBox" text="Chorus" textFill="#fefefe" />
+        <CheckBox layoutX="530.0" layoutY="435.0" onAction="#clippingBox" text="Clipping" textFill="#fefefe" />
+
 
     </children>
 </AnchorPane>

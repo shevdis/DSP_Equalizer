@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e7d6718-0c30-4e9f-ab37-d6ca11a7b130" name="Changes" comment="app5_pf_bih">
+    <list default="true" id="2e7d6718-0c30-4e9f-ab37-d6ca11a7b130" name="Changes" comment="app6_equalizer_bih">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/FXMLDocument.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/FXMLDocument.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/FXMLDocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/FXMLDocumentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/equalizer/Equalizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equalizer/Equalizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/equalizer/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equalizer/Filter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/equalizer/FilterInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/equalizer/FilterInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/player/AudioPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/AudioPlayer.java" afterDir="false" />
@@ -29,12 +32,21 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/markn/IdeaProjects/EqualizerDR",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/markn/IdeaProjects/EqualizerEO/src",
     "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.20114942"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\markn\IdeaProjects\EqualizerEO\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="effects" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="eq" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="GUI.EqualizerApp" />
@@ -117,7 +129,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687172466784</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="app6_equalizer_kih">
+      <created>1687172654511</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687172654511</updated>
+    </task>
+    <task id="LOCAL-00011" summary="app6_equalizer_bih">
+      <created>1687172738228</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1687172738228</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +167,8 @@
     <MESSAGE value="app4_pf_kih" />
     <MESSAGE value="app5_pf_kih" />
     <MESSAGE value="app5_pf_bih" />
-    <option name="LAST_COMMIT_MESSAGE" value="app5_pf_bih" />
+    <MESSAGE value="app6_equalizer_kih" />
+    <MESSAGE value="app6_equalizer_bih" />
+    <option name="LAST_COMMIT_MESSAGE" value="app6_equalizer_bih" />
   </component>
 </project>
