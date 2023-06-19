@@ -4,7 +4,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="150" prefWidth="410" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXMLDocumentController">
+<?import javafx.scene.control.CheckBox?>
+<AnchorPane id="AnchorPane" prefHeight="160" prefWidth="410" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXMLDocumentController">
     <children>
 
         <Label layoutX="130" layoutY="30" text="Панель управления" textFill="#fefefe" />
@@ -14,5 +15,6 @@
         <Button fx:id="button_stop" layoutX="250" layoutY="60" onAction="#stop" prefHeight="40.0" prefWidth="70.0" text="Reset" />
         <Button fx:id="buttonClose" layoutX="330" layoutY="60" maxWidth="110" onAction="#clickClose" prefHeight="40.0" prefWidth="70.0" text="Close" />
 
+        <CheckBox layoutX="150" layoutY="120.0" onAction="#filterBox" text="ФНЧ КИХ" textFill="#fefefe" />
     </children>
 </AnchorPane>
